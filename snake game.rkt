@@ -70,7 +70,7 @@
          (make-world (world-x-posn w)
           (+ (world-y-posn w)(* FRAME-INTERVAL BASE-SPEED))
           (world-movement w))]
-        [(= (world-x-posn  0)) (make-world (world-x-posn w)(world-y-posn) "up")]
+        [(= (world-x-posn  0)) (make-world (world-x-posn w)(world-y-posn) "up")] ; lines 73-76 don't work. it'd be nice it they did.
         [(= (world-x-posn  500)) (make-world (world-x-posn w)(world-y-posn) "down")]
         [(= (world-y-posn  0)) (make-world (world-x-posn w)(world-y-posn) "right")]
         [(= (world-y-posn  500)) (make-world (world-x-posn w)(world-y-posn) "left")]
